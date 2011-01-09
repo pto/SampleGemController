@@ -4,7 +4,7 @@ AuthorityDemo::Application.routes.draw do
   # imitate that part of "resource :roles" that we allow, substituting
   # name for id.
   namespace 'my_gem' do
-    get '/roles' => 'roles#index'
+    get '/roles' => 'roles#index' # URL is /my_gem/roles
     get '/roles/:name/edit' => 'roles#edit', :as => 'edit_role'
     get '/roles/:name' => 'roles#show', :as => 'role'
     put '/roles/:name' => 'roles#update', :as => 'update_role'
@@ -59,7 +59,7 @@ AuthorityDemo::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => "roles#index"
+  root :to => "my_gem/roles#index"
 
   # See how all your routes lay out with "rake routes"
 

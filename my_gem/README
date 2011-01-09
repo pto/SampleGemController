@@ -1,0 +1,4 @@
+== MyGem sample gem including models, a controller and view
+
+This sample gem shows how a gem can contain models, a controller and views for use
+in a client application.

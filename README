@@ -1,0 +1,4 @@
+== Sample Client and Gem factoring out models, controller and views
+
+The sample client ClientApp uses the gem MyGem to provide models, a controller and
+views. This shows how you can pull these types of common code into a gem.
