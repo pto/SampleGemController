@@ -1,22 +1,22 @@
 require "spec_helper"
 
-describe RolesController do
+describe MyGem::RolesController do
   describe "routing" do
 
     it "recognizes and generates #index" do
-      { :get => "/roles" }.should route_to(:controller => "roles", :action => "index")
+      { :get => "/my_gem/roles" }.should route_to(:controller => "my_gem/roles", :action => "index")
     end
 
     it "recognizes and generates #show" do
-      { :get => "/roles/Admin" }.should route_to(:controller => "roles", :action => "show", :name => "Admin")
+      { :get => "/my_gem/roles/Admin" }.should route_to(:controller => "my_gem/roles", :action => "show", :name => "Admin")
     end
 
     it "recognizes and generates #edit" do
-      { :get => "/roles/Admin/edit" }.should route_to(:controller => "roles", :action => "edit", :name => "Admin")
+      { :get => "/my_gem/roles/Admin/edit" }.should route_to(:controller => "my_gem/roles", :action => "edit", :name => "Admin")
     end
 
     it "recognizes and generates #update" do
-      { :put => "/roles/Admin" }.should route_to(:controller => "roles", :action => "update", :name => "Admin")
+      { :put => "/my_gem/roles/Admin" }.should route_to(:controller => "my_gem/roles", :action => "update", :name => "Admin")
     end
 
   end
