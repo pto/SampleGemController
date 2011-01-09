@@ -1,0 +1,7 @@
+== Roles and Authorities Demonstration App
+
+This sample app shows the models, controllers and routes to set the
+authorities associated with a role, where roles and authorities are
+predetermined (in a real application, they would come from an outside
+service). An added complication is that roles and authorities are
+identified by name, not id.

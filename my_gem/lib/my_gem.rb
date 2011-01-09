@@ -1,0 +1,5 @@
+require 'my_gem/version'
+require 'my_gem/role'
+require 'my_gem/authority'
+require 'my_gem/authority_role'
+require 'my_gem/roles_controller'
